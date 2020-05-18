@@ -1,4 +1,5 @@
 class Fruit < ApplicationRecord
+
     def standard_weight
       weight * 2.2
     end
@@ -9,4 +10,9 @@ class Fruit < ApplicationRecord
     def hello
       puts "hello"
     end
+
+    def tax( price )
+    price * 7.5
+  end
+
 end
